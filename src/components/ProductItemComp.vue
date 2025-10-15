@@ -1,0 +1,42 @@
+<template>
+  <div class="product-item">
+    <span>{{ product.name }} - ${{ product.price }}</span>
+    <div class="actions">
+      <button @click="editProduct">編輯</button>
+      <button @click="removeProduct">刪除</button>
+    </div>
+  </div>
+</template>
+
+<script setup>
+//資料自外部進(props)
+const props = defineProps({
+  product: Object,
+})
+
+//資料自內部出(emits)
+const emits = defineEmits(['edit', 'delete'])
+
+//
+const editProduct = () => {
+  emits('edit', props.product, props.product?.id)
+}
+
+const removeProduct = () => {
+  emits('delete', props.product.id)
+}
+</script>
+
+<style scoped>
+.product-item {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions button {
+  margin-left: 8px;
+}
+</style>
