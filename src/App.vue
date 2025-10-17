@@ -1,10 +1,11 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import OnUnmounted from './components/OnUnmounted.vue'
-import OnUpdated from './components/OnUpdated.vue'
 import ProductManager from './components/ProductManager.vue'
+import RefComponent from './components/RefComponent.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import VmodelDemo from './components/VmodelDemo.vue'
+import WatchEffectComp from './components/WatchEffectComp.vue'
+import WatchRef from './components/WatchRef.vue'
 
 const hzn = "hzn's"
 </script>
@@ -22,8 +23,9 @@ const hzn = "hzn's"
     <!-- <TheWelcome /> -->
     <!-- <ProductManager /> -->
     <!-- <VmodelDemo /> -->
-    <!-- <OnUnmounted /> -->
-    <OnUpdated />
+    <!-- <RefComponent /> -->
+    <!-- <WatchRef /> -->
+    <WatchEffectComp />
   </main>
 </template>
 
