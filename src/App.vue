@@ -1,11 +1,14 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import TabComponent from './components/is/TabComponent.vue'
 import ProductManager from './components/ProductManager.vue'
 import RefComponent from './components/RefComponent.vue'
+import RegisterRunDown from './components/regist/RegisterRunDown.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import VmodelDemo from './components/VmodelDemo.vue'
 import WatchEffectComp from './components/WatchEffectComp.vue'
 import WatchRef from './components/WatchRef.vue'
+import ProductPage from './components/product/ProductPage.vue'
 
 const hzn = "hzn's"
 </script>
@@ -25,7 +28,9 @@ const hzn = "hzn's"
     <!-- <VmodelDemo /> -->
     <!-- <RefComponent /> -->
     <!-- <WatchRef /> -->
-    <WatchEffectComp />
+    <!-- <WatchEffectComp /> -->
+    <!-- <RegisterRunDown /> -->
+    <ProductPage />
   </main>
 </template>
 
